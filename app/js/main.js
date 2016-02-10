@@ -1,6 +1,8 @@
 var points = 2000;
 
 $(document).ready(function () {
+  $('#points').html(points);
+
   $('#playButton').click(() => {
     gameF();
   });
