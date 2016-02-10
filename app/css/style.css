@@ -8,6 +8,64 @@ Gul:		#FFE11A
 Orange:		#FD7400
 -------------------*/
 
+body {
+    background-color: #004358;
+}
+
+#canvas {
+    width: 510px;
+    height: 500px;
+    margin: 50px auto;
+    background-color: #FD7400;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#symbols {
+    width: 100%;
+    height: 180px;
+    background-color:#1F8A70;
+    border-radius: 15px;
+}
+
+.symbol {
+    width: 150px;
+    height: 150px;
+    background-color: #004358;
+    margin: 10px;
+    float: left;
+    border-radius: 75px;
+    background: url(../grafik/step1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 150px 150px;
+}
+
+#points {
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  padding-top: 25px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#navigation {
+  text-align: center;
+  width: 100%;
+}
+
+.button {
+  background-color: #1F8A70;
+  border: none;
+  color: white;
+  padding: 20px 40px;
+  text-decoration: none;
+  font-size: 40px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
 @media (max-width: 1200px) {
 /*iPad horisontalt*/
 
