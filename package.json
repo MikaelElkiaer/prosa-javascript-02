@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jquery-mobile": "^1.4.1"
+    "jquery": "^2.2.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

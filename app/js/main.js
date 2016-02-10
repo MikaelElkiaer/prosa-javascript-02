@@ -37,16 +37,25 @@ function gameF() {
       break;
   }
 
-  $('#points').html(points);
+  if (points <= 0)
+    lose();
+  else
+    $('#points').html(points);
 }
 
 function win() {
-  var audio = `
-<audio autoplay>
-  <source src="lyde/ohhh.wav" type="audio/wav">
-  Din browser understøtter ikke dette lydformat.
-</audio>
-  `;
+  $('#sound').get(0).play();
+}
 
-  $('#sound').html(audio);
+function lose() {
+  var loseHtml = $(`
+<div id="brain" style="text-align: center;">
+  <img src="grafik/brain.png" />
+</div>
+  `);
+
+  $("#canvas").html(loseHtml);
+  $("#brain").hide().fadeIn('slow', () => {
+
+  });
 }
