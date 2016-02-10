@@ -25,14 +25,28 @@ function gameF() {
   switch (result) {
     case "111":
       points += 400;
+      win();
       break;
     case "222":
       points += 800;
+      win();
       break;
     case "333":
       points += 1200;
+      win();
       break;
   }
 
   $('#points').html(points);
+}
+
+function win() {
+  var audio = `
+<audio autoplay>
+  <source src="lyde/ohhh.wav" type="audio/wav">
+  Din browser understøtter ikke dette lydformat.
+</audio>
+  `;
+
+  $('#sound').html(audio);
 }
