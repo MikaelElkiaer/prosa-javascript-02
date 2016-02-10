@@ -18,6 +18,15 @@ function gameF() {
     $(`#symbol${i+1}`).css('background-image', img);
   });
 
+  $('#points').hide().delay(1000).fadeIn(1000);
+  $('#playButton').hide().delay(1000).fadeIn(1000);
+
+  for (var i = 1, size = syms.length+1; i < size; i++) {
+    var symbol = $(`#symbol${i}`);
+    symbol.css('background-image', syms[i]);
+    symbol.hide().delay(300 + 200 * i).fadeIn(1000);
+  }
+
   var result = syms.reduce((prev, cur, i) => {
     return prev + cur;
   }, "");
